@@ -6,10 +6,6 @@ DATA_PATH = r'C:\Users\eviatar\OneDrive\Documents\Python Venv\FitImage\TrainData
 
 
 def split_data(df):
-    # y = df['Image_name'].to_numpy()
-    # df = df.iloc[:, 1:]
-    # # df.insert(0, 'intercept', 1)
-    # x = df.to_numpy()
     y = df.iloc[:, 0]
     x = df.iloc[:, 1:]
     return x.to_numpy(), y.to_numpy()
